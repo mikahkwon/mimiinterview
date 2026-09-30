@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+    
+    body {
+    margin: 0;
+    background: white;
+    color: #111;
+    font-family: "bricolage grotesque", Arial, sans-serif;
+    }
+
+    main {
+    width: min(100% - 48px, 880px);
+    margin: 80px auto 100px;
+    }
+
+    .hero-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+    .headline-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    margin-top: 42px;
+    }
+
+    h1 {
+    flex: 1;
+    margin: 0;
+    font-size: clamp(34px,4.2vw,46px);
+    line-height:1.07;
+    letter-spacing: -1.5px;
+    }
+
+    .mixset {
+    flex-shrink: 0;
+    color: #111;
+    font-size: 28px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    }
+
+    .introduction {
+    margin-top: 34px;
+    }
+
+    .date {
+    margin: 0;
+    font-size: 16px;
+    }     
+
+    .intro-text {
+    max-width: 470px;
+    margin: 2px 0 22px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.27;
+    }
+
+    .credits {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.35;
+    }
+
+    .interview {
+    margin-top: 50px;
+    }
+
+    .interview h2 {
+    margin: 40px 0 24px;
+    font-size: 29px;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    }
+
+    .interview p {
+    margin: 0;
+    font-size: 29px;
+    line-height: 1.4;
+    font-weight: 300;
+    }
+
+    .double-photo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 38px;
+        margin: 60px 0 20px;
+    }
+
+    .double-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .pull-quote {
+        max-width: 620px;
+        margin: 90px 0 80px auto;
+        font-size: 58px;
+        font-weight: bold;
+        line-height: 1.12;
+        letter-spacing: -1.5px;
+        text-align: right;
+    }
+
+    .wide-photo{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 650px) {
+    main {
+        width: calc(100% - 36px);
+        margin-top: 24px;
+    }
+
+     .headline-row {
+        gap: 16px;
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 29px;
+        letter-spacing: -0.7px;
+    }
+
+    .mixset {
+        font-size: 17px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+    }
+
+    .interview h2,
+    .interview p {
+        font-size: 21px;
+    }
+
+    .double-photo {
+        gap: 14px;
+        margin-top:40px;
+    }
+}
